@@ -1,37 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">My Profile</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-              
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-    </nav>
-    
+
+<body style="margin : 0% 5%">
+  <!-- title -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="home.html">My Profile</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <table style="width:100% ; margin : 5%">
+    <tr>
+      <td width=70%>
+        <div class="card text-white bg-info mb-3" style="max-width: 100%">
+          <div class="card-header">
+            <h1>Sarun Suesuwan</h1>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Student</h4>
+            <p class="card-text">Tell : 095-6979542</p>
+            <a href="mailto:sarun_sue@cmu.ac.th" style="color :darkblue">sarun_sue@cmu.ac.th</a>
+          </div>
+        </div>
+      </td>
+      <td width="30%" ; align=" center">
+        <img src="images/4.jpg" alt="" height="200px" width="200px">
+      </td>
+    </tr>
+  </table>
+
+  <form>
+      <fieldset>
+          <div class="card text-white bg-secondary mb-3" style="max-width:  100%;">
+              <div class="card-header"><legend>Contact Me</legend></div>
+              <div class="card-body"><p align = " center">
+      <div class="form-group">
+        <label for="exampleTextarea">Subject : </label>
+        <textarea class="form-control" id="subject" rows="1"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="exampleTextarea">Massage : </label>
+        <textarea class="form-control" id="massage" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="exampleTextarea">Name : </label>
+        <textarea class="form-control" id="name" rows="1"></textarea>
+      </div>
+      <fieldset class="form-group">
+        <p>Gender : </p>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="male" >
+            male
+          </label>
+        </div>
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="female" >
+            female
+          </label>
+        </div>
+      </fieldset>
+      <div class="form-group">
+        <label for="exampleTextarea">Phone : </label>
+        <textarea class="form-control" id="phone" rows="1"></textarea>
+      </div>
+      <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <button type="submit" class="btn btn-secondary" ; style = "margin : 50px">Submit</button>
+      </div>
+    </div>
+    </fieldset>
+  </form>
+  
 </body>
+
 </html>
